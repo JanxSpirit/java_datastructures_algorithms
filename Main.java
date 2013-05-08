@@ -4,19 +4,17 @@ class Main {
 
     public static void main(String[] args) {
         Set<String> ps = permutations("abcd");
-        //List<String> ps = getPerms("abc");
-        System.out.println("final - ");
         for(String s: ps) {
             System.out.println(s);
         }
 
-        permutation("abcd");
+        //permutation("abcd");
     }
 
     static Set<String> permutations(String str) {
         Set<String> result = new HashSet<String>();
         if (str.length() == 0) {
-            result.add("");
+            //result.add("");
             return result;
         }
         char head = str.charAt(0);
